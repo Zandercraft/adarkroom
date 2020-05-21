@@ -1,7 +1,7 @@
 (function() {
 	var Engine = window.Engine = {
 
-		SITE_URL: encodeURIComponent("http://adarkroom.doublespeakgames.com"),
+		SITE_URL: encodeURIComponent("https://dark.vortekacademy.com"),
 		VERSION: 1.3,
 		MAX_STORE: 99999999999999,
 		SAVE_DISPLAY: 30 * 1000,
@@ -74,7 +74,7 @@
 			state: null,
 			debug: false,
 			log: false,
-			dropbox: false,
+			dropbox: true,
 			doubleTime: false
 		},
 
@@ -181,8 +181,8 @@
 
 			$('<span>')
 				.addClass('menuBtn')
-				.text(_('github.'))
-				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+				.text(_('official website.'))
+				.click(function() { window.open('https://vortekacademy.com'); })
 				.appendTo(menu);
 
 			// Register keypress handlers
@@ -269,8 +269,8 @@
 				scenes: {
 					start: {
 						text: [
-							_('export or import save data, for backing up'),
-							_('or migrating computers')
+							_('export or import save data, for migrating computers.'),
+							_('DO NOT SHARE THIS CODE! think of it as your game password.')
 						],
 						buttons: {
 							'export': {
@@ -408,20 +408,20 @@
 				title: _('Get the App'),
 				scenes: {
 					start: {
-						text: [_('bring the room with you.')],
+						text: [_('Coming Soon!')],
 						buttons: {
 							'ios': {
 								text: _('ios'),
 								nextScene: 'end',
 								onChoose: function () {
-									window.open('https://itunes.apple.com/app/apple-store/id736683061?pt=2073437&ct=adrproper&mt=8');
+									window.open('https://itunes.apple.com/');
 								}
 							},
 							'android': {
 								text: _('android'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://play.google.com/store/apps/details?id=com.yourcompany.adarkroom');
+									window.open('https://play.google.com/');
 								}
 							},
 							'close': {
@@ -448,18 +448,11 @@
 									window.open('https://www.facebook.com/sharer/sharer.php?u=' + Engine.SITE_URL, 'sharer', 'width=626,height=436,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');
 								}
 							},
-							'google': {
-								text:_('google+'),
-								nextScene: 'end',
-								onChoose: function() {
-									window.open('https://plus.google.com/share?url=' + Engine.SITE_URL, 'sharer', 'width=480,height=436,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');
-								}
-							},
 							'twitter': {
 								text: _('twitter'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://twitter.com/intent/tweet?text=A%20Dark%20Room&url=' + Engine.SITE_URL, 'sharer', 'width=660,height=260,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');
+									window.open('https://twitter.com/intent/tweet?text=Come%20Check%20Out%20VorteK%20Academys%20New%20Game%20A%20Dark%20Room&url=' + Engine.SITE_URL, 'sharer', 'width=660,height=260,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');
 								}
 							},
 							'reddit': {
