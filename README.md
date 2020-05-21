@@ -39,5 +39,6 @@ an interactive village-builder game with a twist of horror.
 	<td><a href="https://dark.vortekacademy.com/?lang=gl">Galician</a></td>
 </tr>
 </table>
-
+<!---
 or play the latest dev build on [GitHub](http://zandercraft.github.io/adarkroom)
+-->
